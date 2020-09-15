@@ -1,0 +1,380 @@
+@font-face {
+  font-family: Pacifico;
+  src: url(Pacifico-Regular.ttf);
+}
+input,
+label,
+select,
+button,
+textarea
+{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	
+	/* Browsers have different default form fonts */
+	font-size:13px;
+	font-family:Arial;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus,
+textarea:focus
+{
+	outline:0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/* Text Inputs
+-----------------------------------------------*/
+
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week]
+{
+}
+
+/* Button Controls
+-----------------------------------------------*/
+
+input[type=checkbox],
+input[type=radio]
+{
+	width:13px;
+	height:13px;
+}
+
+/* File Uploads
+-----------------------------------------------*/
+
+input[type=file]
+{
+
+}
+
+/* Search Input
+-----------------------------------------------*/
+
+/* Make webkit render the search input like a normal text field */
+input[type=search]
+{
+	-webkit-appearance:textfield;
+	-webkit-box-sizing:content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration
+{
+	display:none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]
+{
+	/* Fix IE7 display bug */
+	overflow:visible;
+	width:auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button
+{	
+	padding:0;
+	border:0;
+	background:none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+textarea 
+{
+	/* Move the label to the top */
+	vertical-align:top;
+	
+	/* Turn off scroll bars in IE unless needed */
+	overflow:auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select
+{
+
+}
+
+select[multiple] 
+{
+	/* Move the label to the top */
+	vertical-align:top;
+}
+.frame {
+  width: 1000px;
+  min-height: 1000px;
+  border: solid 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+}
+.header {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: rgb(0, 0, 0);
+  font-family: Pacifico;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+.leftnav {
+  border-right: solid 1px;
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+}
+.projectsheader {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: solid 2px;
+}
+.projectstitle {
+  padding-top: 4px;
+}
+.addproject {
+  font-size: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 40px;
+  font-weight: normal;
+}
+.addproject:hover {
+  cursor: pointer;
+  color: rgb(75, 75, 75);
+}
+.projectscontainer {
+  display: flex;
+  flex-direction: column;
+}
+.projecttab {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: solid 1px;
+  border-color: grey;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.projecttab:hover {
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+}
+.maincontainer {
+  grid-area: 2 / 2 / 3 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.projectinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.projecttitle {
+  font-size: 40px;
+}
+.projectduedate {
+  padding-top: 20px;
+  font-style: italic;
+}
+.projectdescription {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px;
+  font-size: 20px;
+}
+.todoscontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.todotab {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  border-bottom: solid 1px grey;
+  height: 100px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid 3px;
+  border-radius: 10px;
+}
+.todotab:hover {
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+}
+.todotabtitle {
+  font-size: 30px;
+  width: 400px;
+}
+.todotabcheck {
+  font-size: 30px;
+  font-weight: 700;
+}
+.modifyproject {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.editproject:hover {
+  cursor: pointer;
+}
+.deleteproject:hover {
+  cursor: pointer;
+}
+.submitproject:hover {
+  cursor: pointer;
+}
+.todo {
+  padding: 20px;
+  border: solid 3px;
+  border-radius: 10px;
+}
+.todoinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.todotitle {
+  font-size: 40px;
+}
+.tododuedate {
+  padding-top: 20px;
+  font-style: italic;
+}
+.tododescription {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px;
+  font-size: 20px;
+}
+.modifytodo {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.edittodo:hover {
+  cursor: pointer;
+}
+.deletetodo:hover {
+  cursor: pointer;
+}
+.todonotes {
+  margin-top: 20px;
+}
+.todonotestitle {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.backbutton {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.backbutton:hover {
+  color: rgb(75, 75, 75);
+  cursor: pointer;
+}
+.todopriority {
+  font-weight: 700;
+}
+.projectcontainer {
+  display: none;
+}
+.todocontainer {
+  display: none;
+}
+.projectformcontainer {
+  display: none;
+}
+.todoformcontainer {
+  display: none;
+}
+#projectformdescription,
+#todoformdescription,
+#todoformnotes {
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+.newtodocontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.newtodo {
+  text-align: right;
+  margin-right: 20px;
+  font-size: 50px;
+  line-height: 50px;
+}
+.newtodo:hover {
+  cursor: pointer;
+  color: rgb(75, 75, 75);
+}

@@ -1,7 +1,18 @@
-class project {
-  constructor(title, description = "", dueDate = "", notes = "", todoItems = []) {
-    return {title, description, dueDate, notes, todoItems};
+class Project {
+  constructor(title, description = "", dueDate = "", todoItems = []) {
+    return {title, description, dueDate, todoItems};
   }
-
+  editTitle(newTitle) {
+    title = newTitle;
+  }
+  editDescription(newDescription) {
+    description = newDescription;
+  }
+  editDueDate(newDueDate) {
+    dueDate = newDueDate;
+  }
+  editTodoItems(newTodoItems) {
+    todoItems = newTodoItems;
+  }
 }
-export { project }
+export { Project }

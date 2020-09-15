@@ -2,20 +2,20 @@
   "name": "todo-list",
   "version": "1.0.0",
   "description": "A simple todo-list app.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jc2195/todo-list.git"
+    "type": "",
+    "url": ""
   },
-  "author": "Kuba Ciukiewicz",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jc2195/todo-list/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/jc2195/todo-list#readme",
+  "homepage": "",
   "devDependencies": {
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
