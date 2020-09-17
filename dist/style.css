@@ -156,7 +156,8 @@ select[multiple]
 	vertical-align:top;
 }
 .frame {
-  width: 1000px;
+  max-width: 1000px;
+  min-width: 600px;
   min-height: 1000px;
   border: solid 5px;
   margin-left: auto;
@@ -274,9 +275,14 @@ select[multiple]
   font-size: 30px;
   width: 400px;
 }
+.todotabdate {
+  padding-left: 20px;
+  padding-right: 10px;
+}
 .todotabcheck {
   font-size: 30px;
   font-weight: 700;
+  width: 20px;
 }
 .modifyproject {
   display: flex;
@@ -291,6 +297,7 @@ select[multiple]
 }
 .submitproject:hover {
   cursor: pointer;
+  color: rgb(75, 75, 75);
 }
 .todo {
   padding: 20px;
@@ -306,6 +313,7 @@ select[multiple]
 }
 .tododuedate {
   padding-top: 20px;
+  padding-left: 20px;
   font-style: italic;
 }
 .tododescription {
@@ -317,7 +325,7 @@ select[multiple]
 .modifytodo {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .edittodo:hover {
   cursor: pointer;
@@ -377,4 +385,17 @@ select[multiple]
 .newtodo:hover {
   cursor: pointer;
   color: rgb(75, 75, 75);
+}
+.submittodo {
+  font-size: medium;
+}
+.submittodo:hover {
+  cursor: pointer;
+  color: rgb(75, 75, 75);
+}
+.submitproject {
+  font-size: medium;
+}
+.todoformpriority {
+  font-size: large;
 }

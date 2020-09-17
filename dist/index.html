@@ -78,9 +78,10 @@
             </div>
           </div>
           <div class="projectformcontainer">
-            <form>
+            <div class="backbutton">< Back</div>
+            <form id="projectform">
               <div class="modifyproject">
-                <div class="submitproject">Submit</div>
+                <input type="submit" class="submitproject" value="Submit">
               </div>
               <div class="projectinfo">
                 <div class="projecttitle"><input type="text" class="projecttitle" id="projectformtitle" placeholder="Title"></div>
@@ -90,10 +91,11 @@
             </form> 
           </div>
           <div class="todoformcontainer">
-            <form>
+            <div class="backbutton">< Back</div>
+            <form id="todoform">
               <div class="todo">
                 <div class="modifytodo">
-                  <div class="submitproject">Submit</div>
+                  <input type="submit" class="submittodo" value="Submit">
                   <div class="todopriority">
                     <label for="priority">Priority</label>
                     <select name="priority" id="todoformpriority">
